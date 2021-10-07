@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.4.9)  8 OCT 2021 00:08
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.4.9)  8 OCT 2021 00:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -568,6 +568,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 144.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
 (fancyhdr)                \setlength{\headheight}{12.64723pt}.
@@ -576,8 +579,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1
 
-] 
+]
+Overfull \hbox (6.82358pt too wide) in paragraph at lines 148--148
+\TU/texgyrepagella-regular.otf(0)/b/n/13 Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus mau-
+ []
+
+
+Package lastpage Warning: Rerun to get the references right on input line 154.
+
+
 AED: lastpage setting LastPage
+
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 154.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
@@ -589,14 +603,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 8391 strings out of 476919
- 222916 string characters out of 5825425
- 823796 words of memory out of 5000000
- 28248 multiletter control sequences out of 15000+600000
+ 8393 strings out of 476919
+ 222962 string characters out of 5825425
+ 824986 words of memory out of 5000000
+ 28250 multiletter control sequences out of 15000+600000
  407394 words of font info for 78 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,12n,104p,1187b,315s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,12n,104p,1187b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on learn.pdf (5 pages).
