@@ -6,6 +6,8 @@
 %颜色color使用该宏包
 \usepackage{changepage}
 %有adjustwidth被使用
+\usepackage{fancyhdr}
+%设置页眉页脚的
 \renewcommand{\figurename}{Figure}
 \renewcommand{\tablename}{Table}
 \renewcommand{\contentsname}{Content}
@@ -78,12 +80,60 @@ Dear Officials:
 % 信的结尾
 \vspace{15pt}
 
-{\raggedleft
+{\raggedleft%右对齐
 Sincerely yours
 
 MCM C Team 1917694\par
 }
 
+% 目录页
+\newpage
+\thispagestyle{empty}
+\tableofcontents
 
+
+\newpage
+% 目录页后面是第一页
+\setcounter{page}{1}
+%将page这一计数器设置为1，亦即从第一页开始计数
+%还可以从其他的操作来增加或者减少
+
+
+
+% 开始写正文
+% 设置正文的页边距
+\newgeometry{top=3cm, left=3.5cm, right=3.5cm}
+% 设置正文的页眉页脚
+\fancyhf{}
+\fancyhead[C]{ }
+% 此处修改右上角页码
+\fancyhead[R]{Page \thepage\ of 19}
+%\fancyhead[R]{Page \thepage\ of 15}
+\fancyhead[L]{Team \# 1917694}
+\fancyfoot[C]{\bfseries\thepage}
+
+\textbf{\section{Introduction}}
+\textbf{\subsection{Restatement of the Problem}}
+
+\lipsum[40]
+
+\begin{itemize}
+    \item \lipsum[4]
+    \item \lipsum[4]
+    \item \lipsum[4]
+    \item \lipsum[4]
+\end{itemize}
+
+\textbf{\subsection{Our Works}}
+
+\lipsum[40]
+\begin{itemize}
+    \item \lipsum[4]
+    \item \lipsum[4]
+    \item \lipsum[4]
+    \item \lipsum[4]
+\end{itemize}
+
+\textbf{\section{Assumptions and Notations}}
 
 \end{document}
