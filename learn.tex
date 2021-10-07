@@ -1,7 +1,27 @@
 \documentclass[13pt]{ctexart}
 \usepackage{geometry}
 \usepackage{graphicx}
+\usepackage{color}
 
 \renewcommand{\figurename}{Figure}
 \renewcommand{\tablename}{Table}
 \renewcommand{\contentsname}{Content}
+
+\begin{document}
+    \newgeometry{left=1in,right=0.75in,top=1in,bottom=1in}
+    % 设置页面的边距，有多种设置方式
+    \setmainfont{Times New Roman}
+    \thispagestyle{empty}
+
+    \vspace*{-16ex}
+    % 设置垂直间距（往上偏移的位置）
+    \centerline{\begin{tabular}{ccc}%这里的ccc代表三个box都是居中的形式来写的
+                                    %也可以搞成……tabular}{3*{c}}                            
+        \parbox[t]{0.3\linewidth}{\begin{center}\textbf{Problem Chosen}\\ \Large\textcolor{red}{ABCDEF}\end{center}}
+        %red是在color宏包中定义的，故需要使用相应的pacage
+        & \parbox[t]{0.3\linewidth}{\begin{center}\textbf{2021\\ MCM/ICM\\ Summary Sheet}\end{center}}
+        & \parbox[t]{0.3\linewidth}{\begin{center}\textbf{Team Control Number}\\ \Large \textcolor{red}{111111}\end{center}}	\\
+            \hline%相当于是表格的横线
+    \end{tabular}}%tabular制表的代码，
+
+\end{document}
