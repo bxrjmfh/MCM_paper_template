@@ -1,4 +1,5 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{}%
 \contentsline {subsection}{\numberline {1.1}Restatement of the Problem}{1}{}%
-\contentsline {subsection}{\numberline {1.2}Our Works}{2}{}%
-\contentsline {section}{\numberline {2}Assumptions and Notations}{3}{}%
+\contentsline {subsection}{\numberline {1.2}Our Works}{1}{}%
+\contentsline {section}{\numberline {2}Assumptions and Notations}{1}{}%
+\contentsline {subsection}{\numberline {2.1}Assumptions}{2}{}%

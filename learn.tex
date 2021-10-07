@@ -7,10 +7,20 @@
 \usepackage{changepage}
 %有adjustwidth被使用
 \usepackage{fancyhdr}
+\pagestyle{fancy}
 %设置页眉页脚的
 \usepackage{lastpage}
 %引入页数
-\pagestyle{fancy}
+
+% 设置列表缩进
+\usepackage[shortlabels]{enumitem}
+
+% 设置修改默认的section标题大小
+\usepackage{titlesec}
+\titleformat*{\section}{\LARGE}
+\titleformat*{\subsection}{\Large}
+\titleformat*{\subsubsection}{\Large}
+
 \renewcommand{\figurename}{Figure}
 \renewcommand{\tablename}{Table}
 \renewcommand{\contentsname}{Content}
@@ -117,44 +127,23 @@ MCM C Team 1917694\par
 \textbf{\section{Introduction}}
 \textbf{\subsection{Restatement of the Problem}}
 
-\lipsum[40]
 
 \begin{itemize}
-    \item \lipsum[4]
-    \item \lipsum[4]
-    \item \lipsum[4]
     \item \lipsum[4]
 \end{itemize}
 
 \textbf{\subsection{Our Works}}
 
-\lipsum[40]
 \begin{itemize}
-    \item \lipsum[4]
-    \item \lipsum[4]
-    \item \lipsum[4]
     \item \lipsum[4]
 \end{itemize}
 
 \textbf{\section{Assumptions and Notations}}
 \lipsum[40]
-
-\lipsum[40]
-
-\lipsum[40]
-
-\lipsum[40]
-
-\lipsum[40]
-
-\lipsum[40]
-
-\lipsum[40]
-
-\lipsum[40]
-
-\lipsum[40]
-
-\lipsum[40]
+\vspace*{10pt}
+\textbf{\subsection{Assumptions}}
+\begin{itemize}
+    \item \lipsum[4]
+\end{itemize}
 
 \end{document}
