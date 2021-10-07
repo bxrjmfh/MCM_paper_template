@@ -8,6 +8,9 @@
 %有adjustwidth被使用
 \usepackage{fancyhdr}
 %设置页眉页脚的
+\usepackage{lastpage}
+%引入页数
+\pagestyle{fancy}
 \renewcommand{\figurename}{Figure}
 \renewcommand{\tablename}{Table}
 \renewcommand{\contentsname}{Content}
@@ -107,9 +110,8 @@ MCM C Team 1917694\par
 \fancyhf{}
 \fancyhead[C]{ }
 % 此处修改右上角页码
-\fancyhead[R]{Page \thepage\ of 19}
-%\fancyhead[R]{Page \thepage\ of 15}
-\fancyhead[L]{Team \# 1917694}
+\fancyhead[R]{Page \thepage\ of \pageref{LastPage} }
+\fancyhead[L]{Team \# 1917694}%编辑队号
 \fancyfoot[C]{\bfseries\thepage}
 
 \textbf{\section{Introduction}}
@@ -135,5 +137,24 @@ MCM C Team 1917694\par
 \end{itemize}
 
 \textbf{\section{Assumptions and Notations}}
+\lipsum[40]
+
+\lipsum[40]
+
+\lipsum[40]
+
+\lipsum[40]
+
+\lipsum[40]
+
+\lipsum[40]
+
+\lipsum[40]
+
+\lipsum[40]
+
+\lipsum[40]
+
+\lipsum[40]
 
 \end{document}
