@@ -21,6 +21,12 @@
 \titleformat*{\subsection}{\Large}
 \titleformat*{\subsubsection}{\Large}
 
+\usepackage{amsmath}
+% 设置表格的列格式否则报错
+\usepackage{array}
+% 三线表宏包
+\usepackage{booktabs}
+%\toprule、\midrule、\bottomrule等表格命令
 \renewcommand{\figurename}{Figure}
 \renewcommand{\tablename}{Table}
 \renewcommand{\contentsname}{Content}
@@ -150,5 +156,60 @@ MCM C Team 1917694\par
 \begin{itemize}
     \item \lipsum[4]
 \end{itemize}%无序列表
+
+
+\textbf{\subsection{Notations}}
+Here are all the notations and their meanings in this paper.
+\begin{table}[h]
+	\centering
+	\vspace{3pt}
+	\begin{tabular}{>{\centering\arraybackslash}p{5em}>{\centering\arraybackslash}p{30em}}
+	\toprule % 绘制第一条线
+    %\specialrule{<rule width>}{<above space>}{<below space>}
+    %eg:\toprule    == \specialrule{.08em}{0pt} {.65ex}
+    %可以更改参数来创建不同粗细的三线表
+    Symbol & Meaning \\ \midrule
+	$t$ & Time \\
+	$N$ & Total reported opioid cases\\
+	$N_t$ & Total reported drug cases\\
+	$\lambda$ & Average cases induced by a single case\\
+	$A_t$ & Status at $t$ \\ 
+	$E$ & Set containing socio-economic factors with high correlation $t$ \\
+	$T$ & Transition matrix\\ 
+	$i(t)$ & Proportion of opioid cases in all drug cases at $t$ \\
+	$\mu_1$ & Average number of drug cases induced by an existing drug case \\
+	$\mu_2$ & Number of opioid cases induced among all drug cases \\
+	$\gamma$ & Drug spread slow down factor \\
+	$i_0$ & Status at $t$ \\ 
+	$H$ & Information Entropy \\ 
+	$p_0$ & Initial number of drug cases\\
+	
+	\bottomrule
+	\end{tabular}
+\end{table}
+\newpage
+\section{Using of the Table}
+
+This is a example to use the table.
+
+\begin{table*}\centering
+\arraystretch{1.3}
+\begin{tabular}{@{meo}rrrrcrrrcrrr@{meo}}\toprule
+& \multicolumn{3}{c}{$w = 8$} & \phantom{abc}& \multicolumn{3}{c}{$w = 16$} &
+\phantom{abc} & \multicolumn{3}{c}{$w = 32$}\\
+\cmidrule{2-4} \cmidrule{6-8} \cmidrule{10-12}
+& $t=0$ & $t=1$ & $t=2$ && $t=0$ & $t=1$ & $t=2$ && $t=0$ & $t=1$ & $t=2$\\ \midrule
+$dir=1$\\
+$c$ & 0.0790 & 0.1692 & 0.2945 && 0.3670 & 0.7187 & 3.1815 && -1.0032 & -1.7104 & -21.7969\\
+$c$ & -0.8651& 50.0476& 5.9384&& -9.0714& 297.0923& 46.2143&& 4.3590& 34.5809& 76.9167\\
+$c$ & 124.2756& -50.9612& -14.2721&& 128.2265& -630.5455& -381.0930&& -121.0518& -137.1210& -220.2500\\
+$dir=0$\\
+$c$ & 0.0357& 1.2473& 0.2119&& 0.3593& -0.2755& 2.1764&& -1.2998& -3.8202& -1.2784\\
+$c$ & -17.9048& -37.1111& 8.8591&& -30.7381& -9.5952& -3.0000&& -11.1631& -5.7108& -15.6728\\
+$c$ & 105.5518& 232.1160& -94.7351&& 100.2497& 141.2778& -259.7326&& 52.5745& 10.1098& -140.2130\\
+\bottomrule
+\end{tabular}
+\caption{Caption}
+\end{table*}
 
 \end{document}
