@@ -34,7 +34,10 @@
 \begin{document}
     \newgeometry{left=1in,right=0.75in,top=1in,bottom=1in}
     % 设置页面的边距，有多种设置方式
-    \setmainfont{Times New Roman}
+    % 设置文档字体，指定粗体和正常字体
+    \setmainfont{Times New Roman}[
+        UprightFont  =Times New Roman,
+        BoldFont  =Times New Roman Negreta,]
     \thispagestyle{empty}
 
     \vspace*{-16ex}
@@ -73,7 +76,7 @@
     
 % 开始写 memo 信
 % 更换字体为 palatino 也可以不换
-\setmainfont{texgyrepagella-regular.otf} 
+%\setmainfont{texgyrepagella-regular.otf} 
 \newpage
 \newgeometry{left=3.5cm,right=3.5cm}
 \thispagestyle{empty}

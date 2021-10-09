@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.4.9)  9 OCT 2021 21:39
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.4.9)  10 OCT 2021 00:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -525,7 +525,8 @@ Package lastpage Info: Please have a look at the pageslts package at
 
 
 Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
-(fontspec)             New Roman' with options [Ligatures=TeX].
+(fontspec)             New Roman' with options [Ligatures=TeX,UprightFont
+(fontspec)             =Times New Roman,BoldFont =Times New Roman Negreta].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
@@ -534,38 +535,26 @@ Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
 (fontspec)             Roman/OT:script=latn;language=dflt;mapping=tex-text;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
 (fontspec)             Roman/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New
-(fontspec)             Roman/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New Roman
+(fontspec)             Negreta/OT:script=latn;language=dflt;mapping=tex-text;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"Times
-(fontspec)             New
-(fontspec)             Roman/B/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             New Roman
+(fontspec)             Negreta/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
 (fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
 (fontspec)             Roman/I/OT:script=latn;language=dflt;mapping=tex-text;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
 (fontspec)             <->"Times New
 (fontspec)             Roman/I/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Times New
-(fontspec)             Roman/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             Roman
+(fontspec)             Negreta/I/OT:script=latn;language=dflt;mapping=tex-text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->"Times New
-(fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             <->"Times New Roman
+(fontspec)             Negreta/I/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 49.
-
-
-Package fontspec Info: Font family 'texgyrepagella-regular.otf(0)' created for
-(fontspec)             font 'texgyrepagella-regular.otf' with options
-(fontspec)             [Ligatures=TeX].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[texgyrepagella-regular.otf]/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->"[texgyrepagella-regular.otf]/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(Font)              size <10.95> substituted on input line 52.
 
 [1
 
@@ -603,12 +592,7 @@ Package fontspec Info: Font family 'texgyrepagella-regular.otf(0)' created for
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-
-LaTeX Font Warning: Font shape `TU/texgyrepagella-regular.otf(0)/b/n' undefined
-(Font)              using `TU/texgyrepagella-regular.otf(0)/m/n' instead on input line 81.
-
-[2
+ [2
 
 ] (./learn.toc
 LaTeX Font Info:    Calculating math sizes for size <13> on input line 2.
@@ -665,10 +649,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [1
 
 ]
-Overfull \hbox (6.82358pt too wide) in paragraph at lines 154--154
-\TU/texgyrepagella-regular.otf(0)/b/n/13 Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus mau-
- []
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -688,7 +668,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [3]
-Overfull \hbox (2.16667pt too wide) in paragraph at lines 223--227
+Overfull \hbox (2.16667pt too wide) in paragraph at lines 226--230
  []
  []
 
@@ -707,19 +687,16 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9154 strings out of 476919
- 232039 string characters out of 5825425
- 838884 words of memory out of 5000000
- 28985 multiletter control sequences out of 15000+600000
- 408756 words of font info for 85 fonts, out of 8000000 for 9000
+ 9136 strings out of 476919
+ 231131 string characters out of 5825425
+ 840131 words of memory out of 5000000
+ 28972 multiletter control sequences out of 15000+600000
+ 408724 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,13n,104p,1187b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,13n,104p,1187b,307s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on learn.pdf (7 pages).
