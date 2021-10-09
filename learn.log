@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.4.9)  8 OCT 2021 10:31
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.4.9)  9 OCT 2021 21:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -366,7 +366,17 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 LaTeX Warning: Unused global option(s):
     [13pt].
 
-(./learn.aux)
+(./learn.aux
+
+LaTeX Warning: Label `eq_pagerank' multiply defined.
+
+
+LaTeX Warning: Label `eq_pagerank' multiply defined.
+
+
+LaTeX Warning: Label `eq_pagerank' multiply defined.
+
+)
 \openout1 = `learn.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
@@ -670,12 +680,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [2]
-Overfull \hbox (193.62556pt too wide) in paragraph at lines 196--212
- [] 
- []
-
-
-AED: lastpage setting LastPage
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
@@ -684,6 +688,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [3]
+Overfull \hbox (2.16667pt too wide) in paragraph at lines 223--227
+ []
+ []
+
+
+AED: lastpage setting LastPage
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
@@ -699,14 +709,17 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 9150 strings out of 476919
- 231861 string characters out of 5825425
- 838837 words of memory out of 5000000
- 28982 multiletter control sequences out of 15000+600000
- 408748 words of font info for 84 fonts, out of 8000000 for 9000
+ 9154 strings out of 476919
+ 232039 string characters out of 5825425
+ 838884 words of memory out of 5000000
+ 28985 multiletter control sequences out of 15000+600000
+ 408756 words of font info for 85 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,12n,104p,1187b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,13n,104p,1187b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on learn.pdf (7 pages).

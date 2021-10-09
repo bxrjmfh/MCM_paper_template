@@ -5,3 +5,7 @@
 \contentsline {subsection}{\numberline {2.1}Assumptions}{2}{}%
 \contentsline {subsection}{\numberline {2.2}Notations}{2}{}%
 \contentsline {section}{\numberline {3}Using of the Table}{3}{}%
+\contentsline {section}{\numberline {4}Model Construction}{3}{}%
+\contentsline {subsection}{\numberline {4.1}xxxx Model}{4}{}%
+\contentsline {subsection}{\numberline {4.2}xxxx Model}{4}{}%
+\contentsline {subsection}{\numberline {4.3}xxxx Model}{4}{}%
