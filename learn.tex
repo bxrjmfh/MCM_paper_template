@@ -35,8 +35,9 @@
 \usepackage{newtxtext}
 %引入newtxtext之后reference之前的中文字样”参考文献“消失了
 \patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
-% 引入网站作为参考文献
+% 引入网站作为参考文献,处理引用网页时过长不换行的问题
 
+\usepackage{url}
 \begin{document}
     \newgeometry{left=1in,right=0.75in,top=1in,bottom=1in}
     % 设置页面的边距，有多种设置方式
@@ -268,12 +269,14 @@ Here are all the notations and their meanings in this paper.
 \lipsum[4]
 
 \newpage
+
 \textbf{\section*{References}\addcontentsline{toc}{section}{References}}
 \fancyhf{}
 \fancyhead[R]{ }
 \fancyhead[L]{ }
+\tolerance=5
 \bibliography{books}
-\Large
+
 \bibliographystyle{IEEEtran}
 
 
