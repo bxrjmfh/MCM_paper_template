@@ -1,4 +1,4 @@
-\documentclass[13pt]{article}
+\documentclass[13pt]{ctexart}
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{color}
@@ -30,6 +30,12 @@
 \renewcommand{\figurename}{Figure}
 \renewcommand{\tablename}{Table}
 \renewcommand{\contentsname}{Content}
+% 设置列表缩进
+\usepackage{etoolbox}
+\usepackage{newtxtext}
+%引入newtxtext之后reference之前的中文字样”参考文献“消失了
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+% 引入网站作为参考文献
 
 \begin{document}
     \newgeometry{left=1in,right=0.75in,top=1in,bottom=1in}
@@ -262,14 +268,14 @@ Here are all the notations and their meanings in this paper.
 \lipsum[4]
 
 \newpage
-% 因为不输出此部分到目录 \addcontentsline{}{}{}是添加此标题到目录
-%\textbf{\section*{References}\addcontentsline{toc}{section}{References}}
+\textbf{\section*{References}\addcontentsline{toc}{section}{References}}
 \fancyhf{}
 \fancyhead[R]{ }
 \fancyhead[L]{ }
-\bibliographystyle{IEEEtran}
-\bibliography{IEEEabrv,books}
+\bibliography{books}
 \Large
+\bibliographystyle{IEEEtran}
+
 
 
 
