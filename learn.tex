@@ -36,8 +36,11 @@
 %引入newtxtext之后reference之前的中文字样”参考文献“消失了
 \patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
 % 引入网站作为参考文献,处理引用网页时过长不换行的问题
-
 \usepackage{url}
+\usepackage{caption}
+% 生成大图的标题包
+\usepackage{subfigure}
+% 生成子图的包
 \begin{document}
     \newgeometry{left=1in,right=0.75in,top=1in,bottom=1in}
     % 设置页面的边距，有多种设置方式
@@ -70,11 +73,11 @@
 
 \begin{adjustwidth}{1cm}{1cm}%使用这玩意儿可以轻松控制页边距
     \indent { }{ }{ }{ }{ }{ }
-    \lipsum[40]
+    
 
-    \lipsum[40]
+    
 
-    \lipsum[40]
+    
 
 
 \vspace{15pt}
@@ -101,7 +104,7 @@
 
 Dear Officials:
 
-\lipsum[40]
+
 
 %\thispagestyle{empty}
 % 若信多出一页，则清理页眉页脚
@@ -145,26 +148,30 @@ MCM C Team 1917694\par
 
 
 \begin{itemize}
-    \item \lipsum[4]
+    \item 123
+\item 234
 \end{itemize}
 
 \textbf{\subsection{Our Works}}
 
 \begin{itemize}
-    \item \lipsum[4]
+    \item 123
+\item 234
 \end{itemize}
 
 \textbf{\section{Assumptions and Notations}}
-\lipsum[40]
+
 \vspace*{10pt}
 \textbf{\subsection{Assumptions}}
 
 \begin{enumerate}
-    \item \lipsum[2]
+    \item 123
+\item 234
 \end{enumerate}%有序列表
 
 \begin{itemize}
-    \item \lipsum[4]
+    \item 123
+\item 234
 \end{itemize}%无序列表
 
 
@@ -205,28 +212,28 @@ Here are all the notations and their meanings in this paper.
 %goto learn tabular
 
 \textbf{\section{Model Construction}}
-\lipsum[4]
+
 \begin{equation}
 	T \cdot A_{t-1}=A_t \implies T=A_t \cdot A_{t-1}^{+}
 	\label{eq_pagerank}
 \end{equation}
 
 \textbf{\subsection{xxxx Model}}
-\lipsum[4]
+
 \begin{equation}
 	T \cdot A_{t-1}=A_t \implies T=A_t \cdot A_{t-1}^{+}
 	\label{eq_pagerank}
 \end{equation}
 
 \textbf{\subsection{xxxx Model}}
-\lipsum[4]
+
 \begin{equation}
 	T \cdot A_{t-1}=A_t \implies T=A_t \cdot A_{t-1}^{+}
 	\label{eq_pagerank}
 \end{equation}
 
 \textbf{\subsection{xxxx Model}}
-\lipsum[4]
+
 \begin{equation}
 	T \cdot A_{t-1}=A_t \implies T=A_t \cdot A_{t-1}^{+}
 	\label{eq_pagerank}
@@ -235,39 +242,44 @@ Here are all the notations and their meanings in this paper.
 \centerline{\textcolor{red}{goto learn equation}}
 \vspace{10pt}
 \textbf{Highlight something important just use textbf}
-\lipsum[4]
+
 
 %某模型的修改
 \subsection{Modification to xxx Model}
-\lipsum[4]
+
 \subsubsection{xx way xx way}
-\lipsum[4]
+
 \subsubsection{Modifying Our Model with xxx way}
-\lipsum[4]
+
 \subsubsection{Analysis of the Modified Model}
-\lipsum[4]
+
 
 \section{Model Simulation and Analysis}%模型的求解和分析
-\lipsum[4]
+
 \cite{characteristic}
 \subsection{Describing Characteristics of XXX Model}
-\lipsum[4]
+
 \subsection{XXX}
-\lipsum[4]
+
 
 \section{Strengths and Weakness}
-\lipsum[4]
+
 \subsection{Strengths}
-\lipsum[4]
+
 \subsection{Weakness}
-\lipsum[4]
+
 
 \section{Sensitivity Analysis}
-\lipsum[4]
+
 
 \section{Conclusion}
-\lipsum[4]
 
+
+
+
+
+
+    
 \newpage
 
 \textbf{\section*{References}\addcontentsline{toc}{section}{References}}
