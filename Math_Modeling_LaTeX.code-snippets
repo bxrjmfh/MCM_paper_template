@@ -38,11 +38,14 @@
 			,"\\end{tabular}"
 			,"\\end{table}"
 		],
+        "description": "create the notation table"
 	},
 	"Add new notation":{
 		"scope": "tex,latex",
 		"prefix": "new_notation_",
 		"body": ["$ $0 $ & $1 \\\\\\"],
-		"description": "nope"
-	}
+		"description": "add enmulation of notation table"
+        
+	},
+
 }
