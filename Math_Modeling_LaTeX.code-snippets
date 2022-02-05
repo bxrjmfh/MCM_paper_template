@@ -118,6 +118,57 @@
 			"\\caption{$0{caption:default}}",
 			"\\end{table}"
 		]
+	},
+	"Write a letter": {
+		"description": "To create a memo or just a letter",
+		"scope": "latex,tex",
+		"body": [
+			"\\newpage",
+			"% 开始写 memo 信",
+			"% 更换字体为 palatino 也可以不换",
+			"%\\setmainfont{texgyrepagella-regular.otf} ",
+			"\\newpage",
+			"\\newgeometry{left=3.5cm,right=3.5cm}",
+			"\\thispagestyle{empty}",
+			"",
+			"{\\centering\\fontsize{18pt}{14pt}\\selectfont \\textbf{MEMO}\\par}",
+			"",
+			"\\vspace{8pt}",
+			"",
+			"\\noindent FROM: Team {} 114514,MCM C",
+			"",
+			"\\noindent To: The group of Governors",
+			"",
+			"\\noindent Date: January 28, 2019%记得改日期等",
+			"\\vspace{15pt}",
+			"",
+			"Dear Officials:",
+			"",
+			"%\\thispagestyle{empty}",
+			"% 若信多出一页，则清理页眉页脚",
+			"%使用thispagestyle指定页码的格式，设置为empty之后就可以实现把该页的页码清除",
+			"% 信的结尾",
+			"\\vspace{15pt}",
+			"",
+			"{\\raggedleft%右对齐",
+			"Sincerely yours",
+			"",
+			"MCM C Team 1917694\\par",
+			"}"
+		],
+		"prefix":"\\create_a_memo_or_letter_"
+		
+	},
+	"Add an equation":{
+		"description": "Add an equation",
+		"scope": "latex,tex",
+		"prefix": "\\create_equation",
+		"body": [
+			"\\begin{equation}"
+			,"$1"
+			,"\\label{$0}"
+			,"\\end{equation}"
+		]
 	}
 
 }

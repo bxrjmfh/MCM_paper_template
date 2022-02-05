@@ -43,10 +43,10 @@
 \usepackage{subfigure}
 % 生成子图的包
 
-\newcommand\s[1]{\section{#1}}
-\newcommand\subs[1]{\subsection{#1}}
-\newcommand\subss[1]{\subsubsection{#1}}
-
+\newcommand\s[1]{\textbf{\section{#1}}}
+\newcommand\subs[1]{\textbf{\subsection{#1}}}
+\newcommand\subss[1]{\textbf{\subsubsection{#1}}}
+\newcommand\pic{\centerline{\textcolor{red}{picture！}}}
 \begin{document}
     \newgeometry{left=1in,right=0.75in,top=1in,bottom=1in}
     % 设置页面的边距，有多种设置方式
@@ -110,110 +110,30 @@
 \fancyhead[L]{Team \# 1917694}%编辑队号
 \fancyfoot[C]{\bfseries\thepage}
 
+
 \textbf{\section{Introduction}}
 \textbf{\subsection{Restatement of the Problem}}
 
-
-
-\begin{itemize}
-    \item 123
-\item 234
-\end{itemize}
-
 \textbf{\subsection{Our Works}}
-
-\begin{itemize}
-    \item 123
-\item 234
-\end{itemize}
 
 \textbf{\section{Assumptions and Notations}}
 
 \vspace*{10pt}
 \textbf{\subsection{Assumptions}}
 
-\begin{enumerate}
-    \item 123
-\item 234
-\end{enumerate}%有序列表
-
-\begin{itemize}
-    \item 123
-\item 234
-\end{itemize}%无序列表
-
-
 \textbf{\subsection{Notations}}
 Here are all the notations and their meanings in this paper.
-\begin{table}[h]
-	\centering
-	\vspace{3pt}
-	\begin{tabular}{>{\centering\arraybackslash}p{5em}>{\centering\arraybackslash}p{30em}}
-	\toprule % 绘制第一条线
-    %\specialrule{<rule width>}{<above space>}{<below space>}
-    %eg:\toprule    == \specialrule{.08em}{0pt} {.65ex}
-    %可以更改参数来创建不同粗细的三线表
-    Symbol & Meaning \\ \midrule
-	$t$ & Time \\
-	$N$ & Total reported opioid cases\\
-	$N_t$ & Total reported drug cases\\
-	$\lambda$ & Average cases induced by a single case\\
-	$A_t$ & Status at $t$ \\ 
-	$E$ & Set containing socio-economic factors with high correlation $t$ \\
-	$T$ & Transition matrix\\ 
-	$i(t)$ & Proportion of opioid cases in all drug cases at $t$ \\
-	$\mu_1$ & Average number of drug cases induced by an existing drug case \\
-	$\mu_2$ & Number of opioid cases induced among all drug cases \\
-	$\gamma$ & Drug spread slow down factor \\
-	$i_0$ & Status at $t$ \\ 
-	$H$ & Information Entropy \\ 
-	$p_0$ & Initial number of drug cases\\
-	
-	\bottomrule
-	\end{tabular}
-\end{table}
 
 \newpage
-\section{Using of the Table}
-\vspace{20pt}
-\centerline{\textcolor{red}{\Huge\textbf{goto learn tabular}}}
-\vspace{10pt}
-%goto learn tabular
 
 \textbf{\section{Model Construction}}
 
-\begin{equation}
-	T \cdot A_{t-1}=A_t \implies T=A_t \cdot A_{t-1}^{+}
-	\label{eq_pagerank}
-\end{equation}
+\textbf{\subsection{xxxx Model}}
 
 \textbf{\subsection{xxxx Model}}
 
-\begin{equation}
-	T \cdot A_{t-1}=A_t \implies T=A_t \cdot A_{t-1}^{+}
-	\label{eq_pagerank}
-\end{equation}
-
 \textbf{\subsection{xxxx Model}}
 
-\begin{equation}
-	T \cdot A_{t-1}=A_t \implies T=A_t \cdot A_{t-1}^{+}
-	\label{eq_pagerank}
-\end{equation}
-
-\textbf{\subsection{xxxx Model}}
-
-\begin{equation}
-	T \cdot A_{t-1}=A_t \implies T=A_t \cdot A_{t-1}^{+}
-	\label{eq_pagerank}
-\end{equation}
-\vspace{10pt}
-\centerline{\textcolor{red}{goto learn equation}}
-\vspace{10pt}
-\textbf{Highlight something important just use textbf}
-
-
-%某模型的修改
 \subsection{Modification to xxx Model}
 
 \subsubsection{xx way xx way}
@@ -222,14 +142,11 @@ Here are all the notations and their meanings in this paper.
 
 \subsubsection{Analysis of the Modified Model}
 
-
 \section{Model Simulation and Analysis}%模型的求解和分析
 
-\cite{characteristic}
 \subsection{Describing Characteristics of XXX Model}
 
 \subsection{XXX}
-
 
 \section{Strengths and Weakness}
 
@@ -237,18 +154,10 @@ Here are all the notations and their meanings in this paper.
 
 \subsection{Weakness}
 
-
 \section{Sensitivity Analysis}
-
 
 \section{Conclusion}
 
-
-
-
-
-
-    
 \newpage
 
 \textbf{\section*{References}\addcontentsline{toc}{section}{References}}
@@ -259,10 +168,5 @@ Here are all the notations and their meanings in this paper.
 \bibliography{books}
 
 \bibliographystyle{IEEEtran}
-
-
-
-
-
 
 \end{document}

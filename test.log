@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.4.9)  5 FEB 2022 21:54
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.4.9)  5 FEB 2022 22:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -313,7 +313,8 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layouthoffset=\dimen262
 \Gm@layoutvoffset=\dimen263
 \Gm@dimlist=\toks22
-) (./test.aux)
+)
+No file test.aux.
 \openout1 = `test.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -332,7 +333,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
- ABD: EverySelectfont initializing macros
+ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 15.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
@@ -425,14 +426,86 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./test.aux) ) 
-Here is how much of TeX's memory you used:
- 7285 strings out of 476919
- 189084 string characters out of 5825425
- 527724 words of memory out of 5000000
- 27207 multiletter control sequences out of 15000+600000
- 403502 words of font info for 36 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 101i,1n,104p,360b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-No pages of output.
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
+(Font)              size <10.95> substituted on input line 16.
+
+./test.tex:17: Missing $ inserted.
+<inserted text> 
+                $
+l.17 ^^I
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./test.tex:17: Display math should end with $$.
+<to be read again> 
+                   \par 
+l.17 ^^I
+        
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+./test.tex:19: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \end{equation}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./test.tex:19: You can't use `\eqno' in vertical mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.19 \end{equation}
+                   
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./test.tex:19: Missing $ inserted.
+<inserted text> 
+                $
+l.19 \end{equation}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./test.tex:19: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.19 \end{equation}
+                   
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+[1
+
+] (./test.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.41063pt have occurred.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 7299 strings out of 476919
+ 189378 string characters out of 5825425
+ 528733 words of memory out of 5000000
+ 27217 multiletter control sequences out of 15000+600000
+ 405112 words of font info for 44 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 101i,4n,104p,360b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on test.pdf (1 page).
