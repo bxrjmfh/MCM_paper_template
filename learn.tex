@@ -41,6 +41,11 @@
 % 生成大图的标题包
 \usepackage{subfigure}
 % 生成子图的包
+
+\newcommand\s[1]{\section{#1}}
+\newcommand\ss[1]{\subsection{#1}}
+\newcommand\sss[1]{\subsubsection{#1}}
+
 \begin{document}
     \newgeometry{left=1in,right=0.75in,top=1in,bottom=1in}
     % 设置页面的边距，有多种设置方式
@@ -147,6 +152,7 @@ MCM C Team 1917694\par
 \textbf{\subsection{Restatement of the Problem}}
 
 
+
 \begin{itemize}
     \item 123
 \item 234
@@ -204,6 +210,7 @@ Here are all the notations and their meanings in this paper.
 	\bottomrule
 	\end{tabular}
 \end{table}
+
 \newpage
 \section{Using of the Table}
 \vspace{20pt}
