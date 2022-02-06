@@ -15,39 +15,38 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-
 	// list
 	// 	1. create the notation table
 	// 	2. add enmulation of notation table
 	//  
-	"Add a notation ":{
+	"Add a notation ": {
 		"scope": "tex,latex",
 		"prefix": "\\create_notation_table_",
 		"body": [
-			"\\begin{table}[h]"
-			,"\\centering"
-			,"\\vspace{3pt}"
-			,"\\begin{tabular}{>{ \\centering \\arraybackslash}p{5em}>{ \\centering \\arraybackslash}p{30em}}"
-			,"\\toprule % 绘制第一条线"
-			,"   Symbol & Meaning    \\\\\\"
-			, "\\midrule"
-			," $$t$ & Time  \\\\\\ "
-			,""
-			,""
-			,"\\bottomrule"
-			,"\\end{tabular}"
-			,"\\end{table}"
+			"\\begin{table}[h]",
+			"\\centering",
+			"\\vspace{3pt}",
+			"\\begin{tabular}{>{ \\centering \\arraybackslash}p{5em}>{ \\centering \\arraybackslash}p{30em}}",
+			"\\toprule % 绘制第一条线",
+			"   Symbol & Meaning    \\\\\\",
+			"\\midrule",
+			" $$t$ & Time  \\\\\\ ",
+			"",
+			"",
+			"\\bottomrule",
+			"\\end{tabular}",
+			"\\end{table}"
 		],
-        "description": "create the notation table"
+		"description": "create the notation table"
 	},
-	"Add new notation":{
+	"Add new notation": {
 		"scope": "tex,latex",
 		"prefix": "new_notation_",
-		"body": ["$ $0 $ & $1 \\\\\\"],
+		"body": [
+			"$ $0 $ & $1 \\\\\\"
+		],
 		"description": "add enmulation of notation table"
-        
 	},
-
 	"Add a complex tri-line table": {
 		"scope": "tex,latex",
 		"prefix": "\\create_table_complex",
@@ -156,19 +155,69 @@
 			"MCM C Team 1917694\\par",
 			"}"
 		],
-		"prefix":"\\create_a_memo_or_letter_"
-		
+		"prefix": "\\create_a_memo_or_letter_"
 	},
-	"Add an equation":{
+	"Add an equation": {
 		"description": "Add an equation",
 		"scope": "latex,tex",
 		"prefix": "\\create_equation",
 		"body": [
-			"\\begin{equation}"
-			,"$1"
-			,"\\label{$0}"
-			,"\\end{equation}"
+			"\\begin{equation}",
+			"$1",
+			"\\label{$0}",
+			"\\end{equation}"
+		]
+	},
+	"Create a pic with subpic": {
+		"scope": "latex,tex",
+		"body": [
+			"\\begin{figure}[htbp]",
+			"    \\centering  %居中",
+			"    \\subfigure[$4]{   %第一张子图",
+			"    \\begin{minipage}{0.4\\textwidth}%大小总和超过textwidth则自动换行",
+			"    \\centering    %子图居中",
+			"    \\includegraphics[width=\\textwidth]{$3}  %设置图片的输出大小倍数，这里是0.5倍大小输出",
+			"    \\end{minipage}",
+			"    }",
+			"    \\subfigure[$2]{ %第二张子图",
+			"    \\begin{minipage}{0.4\\textwidth}",
+			"    \\centering    %子图居中",
+			"    \\includegraphics[width=\\textwidth]{$1}%以pic.jpg的0.5倍大小输出",
+			"    \\end{minipage}",
+			"    }",
+			"    ",
+			"",
+			"    \\caption{name of the figure}    %大图名称",
+			"    \\label{fig:1}    %图片引用标记",
+			"\\end{figure}"
+		],
+		"description": "Create a pic with subpic",
+		"prefix": "\\create_subpic"
+	},
+	"Add a sub pic": {
+		"prefix": "\\add_subpic",
+		"description": "Add a sub pic",
+		"scope": "latex,tex",
+		"body": [
+			"    \\subfigure[$1]{   %子图",
+			"    \\begin{minipage}{0.4\\textwidth}%大小总和超过textwidth则自动换行",
+			"    \\centering    %子图居中",
+			"    \\includegraphics[width=\\textwidth]{$0}  %设置图片的输出大小倍数，这里是0.5倍大小输出",
+			"    \\end{minipage}",
+			"    }"
+		]
+	},
+	"Create a pic": {
+		"description": "Create a pic",
+		"prefix": "\\create_pic",
+		"scope": "latex,tex",
+		"body": [
+			"\\begin {figure}[h]",
+			"\\centering % 居中显示",
+			"\\includegraphics[width=\\textwidth]{$1}",
+			"\\caption{$2} % 标题",
+			"\\label{five}",
+			"\\end {figure}"
 		]
 	}
-
 }

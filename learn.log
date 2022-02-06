@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.4.9)  5 FEB 2022 22:30
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.4.9)  6 FEB 2022 17:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -590,7 +590,11 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 LaTeX Warning: Unused global option(s):
     [13pt].
 
-(./learn.aux)
+(./learn.aux
+
+LaTeX Warning: Label `five' multiply defined.
+
+)
 \openout1 = `learn.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
@@ -856,14 +860,14 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11751 strings out of 476919
- 273389 string characters out of 5825425
+ 11753 strings out of 476919
+ 273402 string characters out of 5825425
  714371 words of memory out of 5000000
- 31552 multiletter control sequences out of 15000+600000
+ 31554 multiletter control sequences out of 15000+600000
  436568 words of font info for 69 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  101i,12n,117p,1187b,261s stack positions out of 5000i,500n,10000p,200000b,80000s
